@@ -19,7 +19,6 @@ from time import time
 
 import numpy as np
 
-
 # Display progress logs on stdout
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s %(levelname)s %(message)s')
@@ -129,7 +128,6 @@ if opts.n_components:
 
     print()
 
-
 # #############################################################################
 # Do the actual clustering
 
@@ -155,7 +153,6 @@ print("Silhouette Coefficient: %0.3f"
       % metrics.silhouette_score(X, km.labels_, sample_size=1000))
 
 print()
-
 
 if not opts.use_hashing:
     print("Top terms per cluster:")
